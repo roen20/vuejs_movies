@@ -5,13 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <link href="<%= BASE_URL %>assets/dist/css/bootstrap.min.css" rel="stylesheet">
     <title><%= htmlWebpackPlugin.options.title %></title>
+        <!-- use the latest release -->
+    <script src="https://unpkg.com/vuejs-paginate@latest"></script>
+    <!-- or use the specify version -->
+    <script src="https://unpkg.com/vuejs-paginate@0.9.0"></script>
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link href="<%= BASE_URL %>assets/dist/css/dashboard.css" rel="stylesheet">
   </head>
   <body>
     <noscript>
       <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
     </noscript>
+    
     <div id="app"></div>
+     
     <!-- built files will be auto injected -->
   </body>
 </html>
